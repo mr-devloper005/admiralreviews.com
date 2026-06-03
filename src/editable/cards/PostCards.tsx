@@ -86,15 +86,15 @@ export function CompactIndexCard({ post, href, index }: { post: SitePost; href: 
 
 export function ArticleListCard({ post, href, index }: { post: SitePost; href: string; index: number }) {
   return (
-    <Link href={href} className={`group grid min-w-0 gap-5 overflow-hidden ${dc.surface.card} p-4 ${dc.motion.lift} sm:grid-cols-[220px_minmax(0,1fr)]`}>
-      <div className={`${dc.media.frame} aspect-[16/12] sm:aspect-auto sm:min-h-[190px]`}>
-        <img src={getEditablePostImage(post)} alt={post.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+    <Link href={href} className="group grid min-w-0 gap-5 overflow-hidden rounded-lg border border-white/10 bg-[#151619] p-4 transition duration-300 hover:-translate-y-1 hover:bg-[#191b22] sm:grid-cols-[220px_minmax(0,1fr)]">
+      <div className="relative overflow-hidden rounded-md bg-[#23262d] aspect-[16/12] sm:aspect-auto sm:min-h-[190px]">
+        <img src={getEditablePostImage(post)} alt={post.title} className="absolute inset-0 h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0" />
       </div>
       <div className="min-w-0 p-2 sm:py-4 sm:pr-5">
-        <p className={`${dc.type.eyebrow} ${pal.accentText}`}>Read {String(index + 1).padStart(2, '0')}</p>
-        <h2 className={`mt-3 line-clamp-3 text-2xl font-black leading-tight tracking-[-0.05em] ${pal.panelText} sm:text-3xl`}>{post.title}</h2>
-        <p className={`mt-4 line-clamp-3 text-sm leading-7 ${pal.softMutedText}`}>{getEditableExcerpt(post, 180)}</p>
-        <span className={`mt-5 inline-flex items-center gap-2 text-sm font-black ${pal.panelText}`}>Open article <ArrowRight className="h-4 w-4" /></span>
+        <p className={`${dc.type.eyebrow} text-[#3f7cff]`}>Read {String(index + 1).padStart(2, '0')}</p>
+        <h2 className="mt-3 line-clamp-3 text-2xl font-black leading-tight tracking-tight text-white sm:text-3xl">{post.title}</h2>
+        <p className="mt-4 line-clamp-3 text-sm leading-7 text-white/58">{getEditableExcerpt(post, 180)}</p>
+        <span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-white/78">Open article <ArrowRight className="h-4 w-4" /></span>
       </div>
     </Link>
   )

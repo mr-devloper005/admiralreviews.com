@@ -95,31 +95,24 @@ export const visualPresets = {
     shape: 'stickers, tabs, framed modules, playful dividers',
   },
   'visual-gallery': {
-    label: 'Visual Gallery',
-    mood: 'cinematic, image-led, immersive',
-    fontDirection: 'minimal sans with oversized display moments',
+    label: 'Article Studio',
+    mood: 'dark, editorial, focused',
+    fontDirection: 'bold condensed-feeling headings with clean reading body',
     colors: {
-      background: '#07101f',
-      foreground: '#f8fbff',
-      muted: '#a9b6c8',
-      primary: '#8df0c8',
-      accent: '#f2a0ff',
-      surface: '#101b2d',
+      background: '#101113',
+      foreground: '#f8f8f3',
+      muted: '#9ca3af',
+      primary: '#3f64f4',
+      accent: '#3f7cff',
+      surface: '#151619',
     },
-    shape: 'dark cards, large media, glass overlays',
+    shape: 'tight dark cards, large media, blue editorial accents',
   },
 } as const
 
 export const visualSystem = {
   productKind: slot4BrandConfig.productKind,
-  recommendedPreset:
-    slot4BrandConfig.productKind === 'visual'
-      ? 'visual-gallery'
-      : slot4BrandConfig.productKind === 'editorial'
-        ? 'editorial-paper'
-        : slot4BrandConfig.productKind === 'directory'
-          ? 'tech-directory'
-          : 'organic-journal',
+  recommendedPreset: 'visual-gallery',
   radius: {
     sm: '0.75rem',
     md: '1.25rem',
