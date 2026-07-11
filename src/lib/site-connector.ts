@@ -172,6 +172,11 @@ export type SiteAd = {
   durationMs?: number | null;
 };
 
+/**
+ * Fetch ads targeted to this site (by SITE_CODE) from the Master Panel.
+ * Targeting / scheduling / ordering is resolved server-side. Pass a `slot` to
+ * scope to one placement (e.g. "sidebar"). Returns [] on any error/misconfig.
+ */
 export async function fetchSiteAds(
   slot?: string,
   options?: { fresh?: boolean; timeoutMs?: number }
