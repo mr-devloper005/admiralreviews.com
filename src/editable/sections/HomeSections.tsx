@@ -58,7 +58,7 @@ function TextIndex({ post, href, index }: { post: SitePost; href: string; index:
   )
 }
 
-export function EditableHomeHero({ primaryTask, primaryRoute, posts }: HomeSectionProps) {
+export function EditableHomeHero({ primaryTask: _primaryTask, primaryRoute, posts }: HomeSectionProps) {
   const heroPost = posts[0]
   const heroTitle = pagesContent.home.hero.title.join(' ')
   const heroImage = heroPost ? getEditablePostImage(heroPost) : '/placeholder.svg?height=900&width=1400'

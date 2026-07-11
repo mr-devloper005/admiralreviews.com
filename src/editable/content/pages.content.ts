@@ -52,27 +52,13 @@ export const pagesContent = {
     },
   },
   about: {
-    badge: 'Our Story',
-    title: 'An article publication built around clarity, pace, and useful ideas.',
-    description: `${slot4BrandConfig.siteName} is built for readers who want thoughtful articles, practical notes, and a clean path from headline to insight.`,
+    badge: `About ${slot4BrandConfig.siteName}`,
+    title: 'Independent reviews for better-informed decisions.',
+    description: `${slot4BrandConfig.siteName} helps readers understand products, services, and everyday choices through clear, useful, and carefully considered editorial content.`,
     paragraphs: [
-      'Every page is shaped around the article: a strong headline, a readable summary, a clear body, and related pieces that actually help the next click.',
-      'Writers can publish drafts without wrestling the interface, and readers can move through the archive without visual noise or stretched layouts.',
-      'The result is a focused editorial space for explainers, essays, guides, reviews, and perspective pieces.',
-    ],
-    values: [
-      {
-        title: 'Readable by default',
-        description: 'Strong contrast, focused widths, and clear type hierarchy keep each article comfortable to scan and finish.',
-      },
-      {
-        title: 'Built for discovery',
-        description: 'Article cards, related reads, and search all help readers move from topic to topic with less friction.',
-      },
-      {
-        title: 'Contributor friendly',
-        description: 'The create flow supports clear summaries, source links, and body copy for article submissions.',
-      },
+      'Our goal is simple: make research easier to follow. We publish reviews, comparisons, practical guides, and informed perspectives without unnecessary complexity.',
+      'Each article is designed to explain what matters, highlight meaningful differences, and give readers enough context to form their own conclusions.',
+      'We value clarity, accuracy, and transparency. As the site grows, we will continue building a useful archive that readers can return to whenever they need a dependable starting point.',
     ],
   },
   contact: {
